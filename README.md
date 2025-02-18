@@ -1,0 +1,4 @@
+# Tcl Floating-Point Comparison Bug
+This repository demonstrates a common error in Tcl when comparing floating-point numbers using the `==` operator.  The `==` operator performs a direct bitwise comparison, which is problematic due to the inherent imprecision of floating-point representation.  This can lead to unexpected results when comparing numbers that are numerically equal but have slightly different bit patterns.
+
+The `bug.tcl` file contains a procedure that exemplifies this issue. The solution, in `bugSolution.tcl`, shows how to handle floating-point comparisons more robustly using an epsilon value for tolerance.
