@@ -1,0 +1,1 @@
+proc robustProc {a b {epsilon 1e-9}} {if {[abs {$a - $b}] < $epsilon} {return 1} {return 0}} 
